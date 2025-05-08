@@ -1,23 +1,29 @@
 {
     "name": "sam/sync-package",
-    "description": "A sync package for local to cloud database sync",
+    "description": "A Laravel package to sync local data to cloud databases.",
+    "keywords": ["laravel", "sync", "cloud", "database", "package"],
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Shahab Alam",
-            "email": "your.email@example.com"
+            "email": "your.email@example.com",
+            "homepage": "https://github.com/shahabjamali45"
         }
     ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0"
+    },
     "autoload": {
         "psr-4": {
             "Sam\\SyncPackage\\": "src/"
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require": {
-        "php": "^8.1",
-        "laravel/framework": "^10.10"
+    "autoload-dev": {
+        "psr-4": {
+            "Sam\\SyncPackage\\Tests\\": "tests/"
+        }
     },
     "extra": {
         "laravel": {
@@ -25,5 +31,10 @@
                 "Sam\\SyncPackage\\SyncServiceProvider"
             ]
         }
-    }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
