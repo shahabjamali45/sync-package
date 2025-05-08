@@ -1,8 +1,8 @@
 <?php
-namespace SyncPackage;
+namespace Sam\SyncPackage;
 
 use Illuminate\Support\ServiceProvider;
-use SyncPackage\Commands\SyncToCloudCommand;
+use Sam\SyncPackage\Commands\SyncToCloudCommand;
 
 class SyncServiceProvider extends ServiceProvider
 {
