@@ -5,37 +5,36 @@
     "type": "library",
     "license": "MIT",
     "authors": [
-      {
-        "name": "Shahab Alam",
-        "email": "your.email@example.com",
-        "homepage": "https://github.com/shahabjamali45",
-        "role": "Developer"
-      }
+        {
+            "name": "Shahab Alam",
+            "email": "your.email@example.com",
+            "homepage": "https://github.com/shahabjamali45"
+        }
     ],
     "require": {
-      "php": "^8.1",
-      "illuminate/support": "^10.0"
+        "php": "^8.1",
+        "illuminate/support": "^10.0"
     },
     "autoload": {
-      "psr-4": {
-        "BuiltWithSam\\SyncPackage\\": "src/"
-      }
+        "psr-4": {
+            "BuiltWithSam\\SyncPackage\\": "src/"
+        }
     },
     "autoload-dev": {
-      "psr-4": {
-        "BuiltWithSam\\SyncPackage\\Tests\\": "tests/"
-      }
+        "psr-4": {
+            "BuiltWithSam\\SyncPackage\\Tests\\": "tests/"
+        }
     },
     "extra": {
-      "laravel": {
-        "providers": [
-          "BuiltWithSam\\SyncPackage\\SyncServiceProvider"
-        ]
-      }
+        "laravel": {
+            "providers": [
+                "BuiltWithSam\\SyncPackage\\SyncServiceProvider"
+            ]
+        }
     },
     "scripts": {
-      "test": "vendor/bin/phpunit"
+        "test": "phpunit"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
-  }
+}
